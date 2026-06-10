@@ -19,7 +19,7 @@
 
 ## What is RPM Vault?
 
-RPM Vault is a **production-grade motorcycle intelligence platform** that helps riders explore, compare, and manage motorcycles. It covers the full spectrum of a rider's journey — from first research through day-to-day ownership.
+RPM Vault is a **full-stack motorcycle intelligence platform** that helps riders explore, compare, and manage motorcycles. It covers the full spectrum of a rider's journey — from first research through day-to-day ownership.
 
 The platform ships as three tightly integrated layers built from a single codebase:
 
@@ -29,11 +29,32 @@ The platform ships as three tightly integrated layers built from a single codeba
 
 ---
 
-## Mission
+## Mission & Why I Built RPM Vault
 
 Make motorcycle research and ownership management accessible to every rider — whether they're buying their first bike or tracking maintenance on their fifth. RPM Vault combines a comprehensive technical database with intelligent personalisation tools so riders spend less time searching and more time riding.
 
+As both a software engineer and motorcycle enthusiast, I wanted a platform that helps riders make informed decisions, compare motorcycles objectively, and manage ownership data in a single place.
+
+RPM Vault started as a side project and evolved into a full-stack platform spanning web, mobile, backend, cloud infrastructure, and product design.
+
 ---
+
+## My Role
+
+RPM Vault is developed as a solo-engineered product.
+
+Responsibilities include:
+
+- Product strategy
+- UX design
+- Frontend development
+- Mobile development
+- Backend development
+- Database design
+- Cloud infrastructure
+- Security hardening
+- CI/CD and deployment
+- Analytics and monitoring
 
 ## Core Features
 
@@ -81,6 +102,16 @@ Make motorcycle research and ownership management accessible to every rider — 
 | **Monorepo** | pnpm workspaces — `frontend`, `mobile`, `shared` packages |
 
 ---
+
+## Project Scale
+
+- 18,000+ motorcycle records
+- Web platform
+- Android application
+- Shared TypeScript monorepo
+- Multi-language support
+- Multi-currency support
+- Real-world production deployment
 
 ## Architecture
 
