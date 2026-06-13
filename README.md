@@ -19,11 +19,15 @@
 
 ## Screenshots
 
-| Web | Android |
-|-----|---------|
-| ![Web Screenshot](assets/screenshots/web-home.png) | ![Android Screenshot](assets/screenshots/android-home.png) |
+### Web
 
----
+<p align="center">
+  <img width="1000" alt="Web Screenshot" src="https://github.com/user-attachments/assets/c016e433-1672-43b4-a766-fc8a1fb3d844" />
+</p>
+
+### Android
+
+<img width="300" alt="Android App" height="600" src="https://github.com/user-attachments/assets/02c68ca4-d8ec-4d8b-869d-2d6b603cfd76" /> <img width="300" height="600" alt="Google Play" src="https://github.com/user-attachments/assets/aa1d7152-341e-4d82-9b56-60b927c0e49c" />
 
 ## What is RPM Vault?
 
