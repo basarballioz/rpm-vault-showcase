@@ -22,7 +22,7 @@
 ### Web
 
 <p align="center">
-  <img width="1000" alt="Web Screenshot" src="https://github.com/user-attachments/assets/c016e433-1672-43b4-a766-fc8a1fb3d844" />
+  <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/11c65f56-374d-4e13-809a-9c5f06ca7de7" />
 </p>
 
 ### Android
