@@ -1,129 +1,115 @@
 # RPMVault
 
-> A full-stack motorcycle intelligence platform — catalogue, compare, track, and match 18,000+ bikes across web and mobile.
+> Your digital motorcycle garage. Track maintenance, fuel, mileage, and ownership costs, then explore and compare 18,000+ motorcycles on the web, iPhone, and Android.
 
-## Get RPMVault Today
+## Get RPMVault
+
 [![Web](https://img.shields.io/badge/Web-rpm--vault.com-orange?style=flat-square&logo=vercel)](https://rpm-vault.com)
-[![Android](https://img.shields.io/badge/Android-Google%20Play-green?style=flat-square&logo=google-play)](https://play.google.com/store/apps/details?id=com.ballioz.rpmvault)
+[![App Store](https://img.shields.io/badge/App%20Store-iPhone-black?style=flat-square&logo=apple)](https://apps.apple.com/tr/app/rpmvault-motorcycle-garage/id6799125794)
+[![Google Play](https://img.shields.io/badge/Google%20Play-Android-green?style=flat-square&logo=google-play)](https://play.google.com/store/apps/details?id=com.ballioz.rpmvault)
 
----
-
-[![React Native](https://img.shields.io/badge/Mobile-React%20Native-blue?style=flat-square&logo=react)](https://reactnative.dev)
-[![Next.js](https://img.shields.io/badge/Web-Next.js%2014-black?style=flat-square&logo=next.js)](https://nextjs.org)
-[![Node.js](https://img.shields.io/badge/API-Node.js%20%2B%20Express-green?style=flat-square&logo=node.js)](https://nodejs.org)
+[![React Native](https://img.shields.io/badge/Mobile-Expo%20%2F%20React%20Native-blue?style=flat-square&logo=react)](https://reactnative.dev)
+[![Next.js](https://img.shields.io/badge/Web-Next.js%2014-black?style=flat-square&logo=nextdotjs)](https://nextjs.org)
+[![Node.js](https://img.shields.io/badge/API-Node.js%20%2B%20Express%205-green?style=flat-square&logo=nodedotjs)](https://nodejs.org)
 [![MongoDB](https://img.shields.io/badge/DB-MongoDB%20Atlas-brightgreen?style=flat-square&logo=mongodb)](https://mongodb.com)
 [![Firebase](https://img.shields.io/badge/Auth-Firebase-yellow?style=flat-square&logo=firebase)](https://firebase.google.com)
-[![TypeScript](https://img.shields.io/badge/Lang-TypeScript-blue?style=flat-square&logo=typescript)](https://typescriptlang.org)
+[![TypeScript](https://img.shields.io/badge/Lang-TypeScript-blue?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
 
----
-
-## Screenshots
-
-### Web
+## Product
 
 <p align="center">
-  <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/11c65f56-374d-4e13-809a-9c5f06ca7de7" />
+  <img src="screenshots/01-garage.webp" width="240" alt="Motorcycle garage with mileage, fuel, and service actions" />
+  <img src="screenshots/02-maintenance.webp" width="240" alt="Maintenance history with dates, mileage, and cost" />
+  <img src="screenshots/03-costs.webp" width="240" alt="Ownership cost analytics for fuel, service, and spending" />
+</p>
+<p align="center">
+  <img src="screenshots/05-compare.webp" width="240" alt="Side-by-side motorcycle comparison" />
+  <img src="screenshots/06-catalog.webp" width="240" alt="Motorcycle catalog with specs and match score" />
+  <img src="screenshots/07-ai.webp" width="240" alt="RPMVault AI grounded in garage records" />
 </p>
 
-### Android
+<p align="center">
+  <a href="https://rpm-vault.com">Web app</a>
+  &nbsp;·&nbsp;
+  <a href="https://apps.apple.com/tr/app/rpmvault-motorcycle-garage/id6799125794">App Store</a>
+  &nbsp;·&nbsp;
+  <a href="https://play.google.com/store/apps/details?id=com.ballioz.rpmvault">Google Play</a>
+</p>
 
-<img width="300" alt="Android App" height="600" src="https://github.com/user-attachments/assets/02c68ca4-d8ec-4d8b-869d-2d6b603cfd76" /> <img width="300" height="600" alt="Google Play" src="https://github.com/user-attachments/assets/aa1d7152-341e-4d82-9b56-60b927c0e49c" />
+## What it is
 
-## What is RPM Vault?
+RPMVault is a motorcycle garage and maintenance tracker. Riders keep the bikes they own in one account: service history, fuel, mileage, expenses, and a catalogue for the next one.
 
-RPM Vault is a **full-stack motorcycle intelligence platform** that helps riders explore, compare, and manage motorcycles. It covers the full spectrum of a rider's journey — from first research through day-to-day ownership.
+It ships as three layers:
 
-The platform ships as three tightly integrated layers built from a single codebase:
+- **Web app.** Next.js 14 with the App Router. Garage, catalogue, and side-by-side comparison at [rpm-vault.com](https://rpm-vault.com).
+- **Mobile app.** Expo SDK 54 / React Native 0.81 on [iPhone](https://apps.apple.com/tr/app/rpmvault-motorcycle-garage/id6799125794) and [Android](https://play.google.com/store/apps/details?id=com.ballioz.rpmvault). Same garage, with offline-resilient caching and in-app Premium.
+- **REST API.** Node.js and Express 5, secured with Firebase Auth and deployed on Vercel. A shared TypeScript package keeps domain rules aligned across web and mobile.
 
-- **Web app** — Next.js 14 with advanced catalogue browsing, side-by-side comparisons, and a personalised rider-matching engine
-- **Mobile app** — Expo / React Native with full feature parity, offline-resilient caching, and in-app purchase support (Android)
-- **REST API** — Node.js / Express 5 serving both clients, secured with Firebase Auth and deployed on Vercel's serverless infrastructure
+## Why I built it
 
----
+Motorcycle ownership usually lives in notes, photos, and memory. Service dates slip, costs stay vague, and research for the next bike happens somewhere else.
 
-## Mission & Why I Built RPM Vault
+I wanted one place to log the bike I already ride and compare the next one with the same account. RPMVault started as a side project and is now a production product: web, iOS, Android, API, and the store releases around them.
 
-Make motorcycle research and ownership management accessible to every rider — whether they're buying their first bike or tracking maintenance on their fifth. RPM Vault combines a comprehensive technical database with intelligent personalisation tools so riders spend less time searching and more time riding.
+## My role
 
-As both a software engineer and motorcycle enthusiast, I wanted a platform that helps riders make informed decisions, compare motorcycles objectively, and manage ownership data in a single place.
+RPMVault is a solo product. I own:
 
-RPM Vault started as a side project and evolved into a full-stack platform spanning web, mobile, backend, cloud infrastructure, and product design.
+- Product direction and UX
+- Web, mobile, and API implementation
+- Data model and catalogue pipeline
+- Auth, billing, and security
+- App Store and Google Play releases
+- Deployment, monitoring, and bilingual copy (English and Turkish)
 
----
-
-## My Role
-
-RPM Vault is developed as a solo-engineered product.
-
-Responsibilities include:
-
-- Product strategy
-- UX design
-- Frontend development
-- Mobile development
-- Backend development
-- Database design
-- Cloud infrastructure
-- Security hardening
-- CI/CD and deployment
-- Analytics and monitoring
-
-## Core Features
+## Core features
 
 | Feature | Web | Mobile |
-|---------|:---:|:------:|
-| Browse 18,000+ motorcycles | ✅ | ✅ |
-| Filter by brand, category, search | ✅ | ✅ |
-| Full technical spec sheets | ✅ | ✅ |
+| --- | :---: | :---: |
+| Digital garage for the bikes you own | ✅ | ✅ |
+| Mileage, fuel logs, and expense tracking | ✅ | ✅ |
+| Maintenance and service history | ✅ | ✅ |
+| Maintenance calendar, including the device calendar | | ✅ |
+| PDF ownership report | ✅ | ✅ |
+| Catalogue of 18,000+ motorcycles, 80+ brands | ✅ | ✅ |
+| Full spec sheets | ✅ | ✅ |
 | Side-by-side comparison | ✅ | ✅ |
-| Rider profile quiz + personalised match score | ✅ | ✅ |
-| Ride-profile radar chart | ✅ | ✅ |
-| Favourites list | ✅ | ✅ |
-| Virtual garage | ✅ | ✅ |
-| Maintenance record tracking | ✅ | ✅ |
-| Fuel log & consumption analytics | ✅ | ✅ |
-| Community reviews & ratings | ✅ | ✅ |
-| Community bike data submissions | ✅ | ✅ |
-| Purchase enquiry forms | ✅ | ✅ |
-| In-app purchases / premium tier | — | ✅ |
+| Rider profile and match score | ✅ | ✅ |
+| Favourites | ✅ | ✅ |
+| RPMVault AI on garage and comparison context | ✅ | ✅ |
+| Community reviews | ✅ | ✅ |
 | Bilingual UI (EN / TR) | ✅ | ✅ |
-| Multi-currency cost display (TRY, EUR, GBP, USD) | ✅ | ✅ |
-| Blog | ✅ | ✅ |
-| Admin panel | ✅ | ✅ |
+| Cost display in TRY, EUR, GBP, and USD | ✅ | ✅ |
+| Premium via App Store and Google Play | | ✅ |
 
----
+Premium is optional. It is billed in the App Store or Google Play, and the entitlement follows the account on the web. It raises RPMVault AI and PDF export quotas. AI answers are informational and are not a substitute for a mechanic.
 
-## Tech Stack
+## Tech stack
 
 | Layer | Technology |
-|-------|-----------|
-| **Web framework** | Next.js 14 — App Router, React Server Components, Edge Middleware |
-| **Mobile framework** | Expo SDK 54 / React Native 0.81 |
-| **Language** | TypeScript 5 (shared across all packages) |
-| **API** | Node.js 20 + Express 5 |
-| **Database** | MongoDB Atlas — replica set, compound indexes, TTL collections |
-| **Auth** | Firebase Authentication — email/password + Google OAuth |
-| **Data fetching** | TanStack Query v5 — hierarchical cache invalidation, SSR dehydration |
-| **UI (web)** | Radix UI + shadcn/ui + Tailwind CSS 4 |
-| **UI (mobile)** | React Navigation v7, react-native-svg, Expo Linear Gradient |
-| **Forms** | React Hook Form + Zod validation |
-| **Payments** | Google Play Billing API (server-side verification) + expo-iap |
-| **Logging** | Pino + pino-http (structured JSON in production) |
-| **Build / CI** | Expo EAS Build — cloud-based iOS & Android builds |
-| **Deployment** | Vercel — web app + serverless API on global edge network |
-| **Monorepo** | pnpm workspaces — `frontend`, `mobile`, `shared` packages |
+| --- | --- |
+| Web | Next.js 14, React Server Components, Tailwind CSS 4, shadcn/ui |
+| Mobile | Expo SDK 54, React Native 0.81, React Navigation 7 |
+| Language | TypeScript, shared across web, mobile, and domain logic |
+| API | Node.js, Express 5 |
+| Database | MongoDB Atlas |
+| Auth | Firebase Authentication: email, Google, Sign in with Apple |
+| Data fetching | TanStack Query v5 |
+| Forms and validation | React Hook Form, Zod |
+| Payments | Apple In-App Purchase and Google Play Billing, verified on the server |
+| Logging | Pino |
+| Mobile release | Expo EAS Build |
+| Deployment | Vercel for the web app and the serverless API |
+| Monorepo | pnpm workspaces: `frontend`, `mobile`, `shared` |
 
----
+## Scale
 
-## Project Scale
-
-- 18,000+ motorcycle records
-- Web platform
-- Android application
-- Shared TypeScript monorepo
-- Multi-language support
-- Multi-currency support
-- Real-world production deployment
+- 18,000+ motorcycle records across 80+ brands
+- Production web app, iOS app, and Android app
+- One account on all three
+- English and Turkish
+- TRY, EUR, GBP, and USD
 
 ## Architecture
 
@@ -131,8 +117,8 @@ Responsibilities include:
 ┌──────────────────────────────────────────────────────────────┐
 │                         Clients                              │
 │  ┌─────────────────────┐    ┌──────────────────────────────┐ │
-│  │  Next.js Web App    │    │  Expo / React Native Mobile  │ │
-│  │  (Vercel Edge)      │    │  (iOS + Android)             │ │
+│  │  Next.js Web App    │    │  Expo / React Native         │ │
+│  │  rpm-vault.com      │    │  iOS + Android               │ │
 │  └──────────┬──────────┘    └──────────────┬───────────────┘ │
 │             │   HTTPS + Firebase JWT        │                │
 └─────────────┼───────────────────────────────┼────────────────┘
@@ -140,39 +126,38 @@ Responsibilities include:
 ┌──────────────────────────────────────────────────────────────┐
 │               REST API  (Vercel Serverless)                  │
 │                                                              │
-│  Helmet · CORS · Rate-limit · HPP · Mongo-sanitize · Zod     │
-│  Firebase JWT verification → RBAC role resolution            │
+│  Helmet · CORS · Rate limit · Mongo sanitize · Zod           │
+│  Firebase JWT verification, then role checks                 │
 │                                                              │
-│  /api/bikes    /api/reviews    /api/leads                    │
-│  /api/users    /api/purchase   /api/bikeSubmissions          │
+│  /api/bikes     /api/reviews     /api/ai                     │
+│  /api/users     /api/purchase    /api/leads                  │
 └────────────────────────┬─────────────────────────────────────┘
                          │
           ┌──────────────┼──────────────┐
           ▼              ▼              ▼
-   MongoDB Atlas    Firebase Auth   Google Play
-   (replica set)                   Billing API
+   MongoDB Atlas    Firebase Auth    App Store +
+                                      Google Play
+                                      billing
 ```
 
-**Shared package** — A `shared` TypeScript workspace package consumed by both the web and mobile apps. It exports all domain types (Zod schemas), the API client, and pure business logic functions: the rider-matching algorithm, ride-profile computation, and garage analytics. Zero type drift between platforms by design.
+**Shared package.** Web and mobile consume the same TypeScript package for domain types, the API client, garage analytics, the maintenance calendar model, and ride-profile matching.
 
-**Rider-matching engine** — A quiz captures 7 dimensions of rider preference (experience, usage, style, build, etc.) and maps them onto 6 scoring axes (road, offroad, comfort, speed, agility, touring). Each motorcycle has its own profile computed from raw specs. A weighted distance function produces a 0–100% match score shown on every detail page — entirely client-side, no API call needed.
+**Garage.** Mileage, fuel, service, and expenses stay on the motorcycle you own. A PDF report packages that history. On iOS and Android, upcoming maintenance can also be written to the device calendar.
 
-**Security** — Defence-in-depth: Helmet CSP + HSTS preload, strict CORS allowlist, per-IP rate limiting, HTTP Parameter Pollution prevention, MongoDB injection sanitisation, AES-256-GCM encryption for collected PII, Firebase token revocation checks, and RBAC on all protected routes.
+**RPMVault AI.** Questions run against the selected motorcycle and the garage context that helps answer them, such as mileage, maintenance, fuel, and expense summaries.
 
-**Caching** — TanStack Query v5 with a hierarchical key taxonomy and per-query stale times (30 min for static brand/category lists down to 30 s for live search suggestions). Mutations invalidate only the affected subtree, not the full cache.
+**Security.** Helmet, a strict CORS allowlist, per-IP rate limiting, MongoDB injection sanitization, Firebase token checks, and role checks on protected routes. Collected lead phone numbers are encrypted with AES-256-GCM.
 
-**SEO** — Dynamic sitemap (individual URLs per motorcycle), JSON-LD structured data, canonical URL normalisation via Vercel Edge Middleware, and full meta tag coverage in both English and Turkish.
+**Caching.** TanStack Query v5 uses a hierarchical key taxonomy. Mutations invalidate the affected subtree.
 
----
+**SEO.** Dynamic sitemap, JSON-LD, and meta coverage in English and Turkish.
 
 ## About
 
-RPM Vault is an independent product designed, built, and maintained as a solo full-stack engineering project. It covers the complete product lifecycle — from system architecture and API design through frontend engineering, mobile development, cloud deployment, and security hardening.
+RPMVault is an independent product. I design, build, ship, and maintain it: architecture, clients, API, store listings, and operations.
 
-[![Web](https://img.shields.io/badge/Try%20it-rpm--vault.com-orange?style=for-the-badge&logo=vercel)](https://rpm-vault.com)
-[![Android](https://img.shields.io/badge/Download-Google%20Play-green?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=com.ballioz.rpmvault)
-
----
+[![Web](https://img.shields.io/badge/Open-rpm--vault.com-orange?style=for-the-badge&logo=vercel)](https://rpm-vault.com)
+[![App Store](https://img.shields.io/badge/Download-App%20Store-black?style=for-the-badge&logo=apple)](https://apps.apple.com/tr/app/rpmvault-motorcycle-garage/id6799125794)
+[![Google Play](https://img.shields.io/badge/Download-Google%20Play-green?style=for-the-badge&logo=google-play)](https://play.google.com/store/apps/details?id=com.ballioz.rpmvault)
 
 _This repository is a public engineering showcase. Source code is proprietary._
-
