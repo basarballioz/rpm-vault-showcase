@@ -126,9 +126,6 @@ Premium is optional. It is billed in the App Store or Google Play, and the entit
 ┌──────────────────────────────────────────────────────────────┐
 │               REST API  (Vercel Serverless)                  │
 │                                                              │
-│  Helmet · CORS · Rate limit · Mongo sanitize · Zod           │
-│  Firebase JWT verification, then role checks                 │
-│                                                              │
 │  /api/bikes     /api/reviews     /api/ai                     │
 │  /api/users     /api/purchase    /api/leads                  │
 └────────────────────────┬─────────────────────────────────────┘
@@ -146,7 +143,7 @@ Premium is optional. It is billed in the App Store or Google Play, and the entit
 
 **RPMVault AI.** Questions run against the selected motorcycle and the garage context that helps answer them, such as mileage, maintenance, fuel, and expense summaries.
 
-**Security.** Helmet, a strict CORS allowlist, per-IP rate limiting, MongoDB injection sanitization, Firebase token checks, and role checks on protected routes. Collected lead phone numbers are encrypted with AES-256-GCM.
+**Security.** Private garage data is available only to a signed-in account.
 
 **Caching.** TanStack Query v5 uses a hierarchical key taxonomy. Mutations invalidate the affected subtree.
 
