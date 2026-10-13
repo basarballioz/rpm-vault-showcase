@@ -4,8 +4,6 @@
 
 Solo-built and in production: [web](https://rpm-vault.com), [iOS](https://apps.apple.com/tr/app/rpmvault-motorcycle-garage/id6799125794), and [Android](https://play.google.com/store/apps/details?id=com.ballioz.rpmvault). One account, English and Turkish. Source is private. This repo is the public engineering summary.
 
-I built it because ownership usually lives in notes and memory. I wanted one place to log the bike I ride and compare the next one without switching products.
-
 ## Product
 
 <p align="center">
@@ -18,6 +16,12 @@ I built it because ownership usually lives in notes and memory. I wanted one pla
   <img src="screenshots/05-catalog.webp" width="240" alt="Motorcycle catalog with specs and match score" />
   <img src="screenshots/06-ai.webp" width="240" alt="RPMVault AI using the selected bike and garage records" />
 </p>
+
+## Why this exists
+
+Motorcycle ownership usually lives in notes, photos, and memory. Service dates slip. Fuel and shop bills stay vague. Research for the next bike happens in a different tab.
+
+RPMVault is the place I wanted as a rider: log the bike I already ride, see what it costs to keep, and compare the next one in the same account. The mission is simple. Make ownership legible: what you spent, what is due, what you might buy next. AI is a helper on that record. It is not a mechanic.
 
 ## What I shipped
 
@@ -39,24 +43,13 @@ Three calls that keep the product one system:
 
 Premium is optional. It raises AI and PDF quotas. AI is informational, not a mechanic.
 
-## Stack
-
-| | |
-| --- | --- |
-| Web | Next.js 14, Tailwind CSS 4, shadcn/ui |
-| Mobile | Expo SDK 54, React Native 0.81 |
-| API | Node.js, Express 5, Vercel |
-| Data | MongoDB Atlas, TanStack Query v5, Zod |
-| Auth | Firebase: email, Google, Sign in with Apple |
-| Billing | App Store and Google Play, verified on the server |
-
 ```
-Web (Next.js)  ─┐
-                ├─ HTTPS, signed-in requests ─► API (Node / Express)
-iOS / Android  ─┘                                 │
-                                                  ├─ MongoDB
-                                                  ├─ Firebase Auth
-                                                  └─ App Store / Play billing
+Web  ─┐
+      ├─ signed-in requests ─► API
+iOS / Android ─┘                 │
+                                 ├─ database
+                                 ├─ auth
+                                 └─ store billing
 ```
 
 Private garage data is available only to a signed-in account. Implementation details stay with the private source.
