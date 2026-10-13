@@ -7,6 +7,10 @@ Solo-built and in production: [web](https://rpm-vault.com), [iOS](https://apps.a
 ## Product
 
 <p align="center">
+  <img src="screenshots/product-loop.gif" width="360" alt="RPMVault screens looping: garage, maintenance, costs, compare, catalog, and AI" />
+</p>
+
+<p align="center">
   <img src="screenshots/01-garage.webp" width="240" alt="Motorcycle garage with mileage, fuel, and service actions" />
   <img src="screenshots/02-maintenance.webp" width="240" alt="Maintenance history with dates, mileage, and cost" />
   <img src="screenshots/03-costs.webp" width="240" alt="Ownership cost analytics for fuel, service, and spending" />
